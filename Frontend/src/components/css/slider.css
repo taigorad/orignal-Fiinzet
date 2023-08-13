@@ -1,0 +1,379 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Anton&family=Caprasimo&family=Gruppo&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Caprasimo&family=Gruppo&family=Montserrat&display=swap');
+.carousel-container{
+  background-size: cover !important;
+  background: url("../images/banner.png") no-repeat center center fixed;
+}
+
+.carousel-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  background-size: cover;
+  z-index: -1;
+}
+
+/* Apply border radius to the images */
+.sliderImg {
+  border-radius: 10px;
+  height: auto;
+  object-fit: cover; /* Ensure the image covers the entire slider */
+  
+}
+
+/* Add styles to the carousel caption */
+.carousel-caption {
+  position: absolute;
+  top:10%; 
+  bottom: 10%;
+  left: 10%;
+  padding: 20px;
+  background-color: rgba(238, 238, 238, 0.8);
+  border-radius: 10px;
+  
+  transform: translateY(100%);
+  transition: transform 0.5s;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  /* box-shadow: 5px 2px 5px rgba(7, 72, 106, 0.4); */
+
+}
+
+.HtextColor{
+  color: #9bc018 ;
+  /* font-weight: bold !important; */
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.5px !important;
+}
+h2{
+
+  margin-top: 10% !important;
+}
+
+.HtextFont2{
+
+  /* font-weight: bold !important; */
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.5px !important;
+}
+.textColor{
+color: #000 !important;
+
+}
+.textFont2{
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.textSize{
+  font-size: 1.5rem !important;
+}
+.textSize2{
+  font-size: smaller !important;
+}
+
+.alignCSS{
+  justify-content: left !important;
+}
+ul{
+  /* text-decoration: none; */
+  list-style: none !important;
+}
+
+.alignCSS li{
+  background-color:#fff !important;
+  border-radius: 10px;
+  text-decoration: none !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+  padding: 0.2rem !important;
+  padding-left: 0.4rem !important;
+  padding-right: 0.4rem !important;
+  color: #9bc018 ;
+  font-weight: bold !important;
+}
+
+/* Animate caption text */
+.carousel-item.active .carousel-caption {
+  transform: translateY(0);
+}
+
+/* Adjust styles for smaller screens */
+@media (max-width: 768px) {
+  .carousel-caption {
+    width: 80%;
+    left: 10%;
+  }
+
+  .carousel-container .carousel-inner {
+    height: 30vh;
+  }
+
+  .carousel-container .carousel-inner .carousel-item img.sliderImg {
+    max-height: 30vh;
+  }
+  .caro-cap{
+    padding: .6rem !important;
+    margin: 0 !important;
+    height: 25rem !important;
+    width: 97vw !important;
+    position: absolute;
+    left: .4rem;
+    
+  }
+  .caro-head{
+    padding: 0 !important;
+    margin: 0 !important;
+
+
+  }
+  .sliderImg,.carousel-bg{
+    height: 30rem !important;
+  }
+
+  .caro-item{
+height: 20rem !important;
+  }
+
+  .caro-in{
+    height: 50vh !important;
+  }
+  .additionalImg{
+    display: none;
+  }
+  .carousel-container{
+    background-size: cover !important;
+    background: url("../images/banner.png") no-repeat center   ;
+
+  }
+}
+
+/* Adjust the margin on top of the carousel */
+.carousel-container {
+  margin-top: 80px;
+}
+
+
+
+
+
+/* Wrap the carousel and indicators */
+
+
+/* Position the indicators below the carousel */
+
+
+/* Style the indicators */
+
+
+/* Style the indicator dots */
+
+
+/* Style the active indicator */
+
+
+/* Adjust the height of the carousel for mobile view */
+@media (max-width: 768px) {
+  .carousel-container .carousel-inner {
+    height: 30vh; /* Adjust the height as needed */
+  }
+
+  .carousel-container .carousel-inner .carousel-item img.sliderImg {
+    max-height: 30vh; /* Adjust the max-height as needed */
+  }
+}
+/* ... (previous CSS rules) ... */
+
+/* Adjust the height of the carousel for bigger screens */
+@media (min-width: 992px) {
+  .carousel-container .carousel-inner {
+    height: 90vh; /* Adjust the height as needed */
+  }
+
+  .carousel-container .carousel-inner .carousel-item img.sliderImg {
+    max-height: 90vh; /* Adjust the max-height as needed */
+  }
+}
+
+/* ... Other CSS rules ... */
+
+/* Position the additional image container */
+.additional-img-container {
+  position: absolute;
+  top: 20vh;
+  left: 80%;
+  transform: translateX(-50%);
+  width: 60%; /* Adjust the width as needed */
+  height: auto;
+  z-index: 1;
+  opacity: 0; /* Hide the container by default */
+  transition: opacity 0.5s;
+}
+
+/* Show the additional image container on active slide */
+.carousel-item.active .additional-img-container {
+  opacity: 1;
+}
+
+/* Style the additional image */
+.additionalImg {
+  width: 35rem;
+  height: 20rem;
+  border-radius: 10px;
+}
+
+
+/* ... (previous CSS rules) ... */
+.btn-primary:hover{
+  background-color: #fff !important;
+}
+
+/*,............*/
+/* ... (previous CSS rules) ... */
+
+/* Adjust the height of the carousel for bigger screens */
+@media (min-width: 992px) {
+  .carousel-container .carousel-inner {
+    height: 90vh; /* Adjust the height as needed */
+  }
+
+  .carousel-container .carousel-inner .carousel-item img.sliderImg {
+    max-height: 90vh; /* Adjust the max-height as needed */
+  }
+}
+
+/* ... Other CSS rules ... */
+
+/* Position the additional image container */
+.additional-img-container {
+  position: absolute;
+  top: 20vh;
+  left: 80%;
+  transform: translateX(-50%);
+  width: 60%; /* Adjust the width as needed */
+  height: auto;
+  z-index: 1;
+  opacity: 0; /* Hide the container by default */
+  transition: opacity 0.5s;
+}
+
+/* Show the additional image container on active slide */
+.carousel-item.active .additional-img-container {
+  opacity: 1;
+}
+
+/* Style the additional image */
+.additionalImg {
+  width: 35rem;
+  height: 20rem;
+  border-radius: 10px;
+}
+
+/* ... (previous CSS rules) ... */
+
+/* Style the carousel indicators */
+.carousel-indicators {
+  list-style: none !important;
+  display: flex !important;
+  justify-content: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute !important;
+  bottom: 20px !important; /* Adjust the position as needed */
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 2; /* Increase the z-index */
+}
+
+/* Style the indicator dots */
+.carousel-indicators li {
+  width: 12px !important;
+  height: 12px !important;
+  margin: 0 5px !important;
+  border-radius: 50% !important;
+  background-color: rgba(118, 118, 118, 0.769) !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+/* Style the active indicator */
+.carousel-indicators li.active {
+  background-color: rgba(255, 255, 255, 0.584) !important;
+  border: 1px solid rgb(59, 59, 59) !important;
+}
+
+/* ..... */
+
+/* ... (previous CSS rules) ... */
+
+/* Adjust the margin on top of the carousel for mobile view */
+@media (max-width: 768px) {
+  .carousel-container {
+    bottom: 0 !important; /* Adjust the top margin as needed */
+  }
+}
+
+/* Adjust the height of the carousel for mobile view */
+@media (max-width: 768px) {
+  .carousel-container .carousel-inner {
+    height: 30vh; /* Adjust the height as needed */
+  }
+
+  .carousel-container .carousel-inner .carousel-item img.sliderImg {
+    max-height: 30vh; /* Adjust the max-height as needed */
+  }
+
+  .caro-cap {
+    padding: 0.6rem !important;
+    margin: 0 !important;
+    height: 25rem !important;
+    width: 97vw !important;
+    position: absolute;
+    left: 0.4rem;
+  }
+
+  .caro-head {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .sliderImg,
+  .carousel-bg {
+    height: 30rem !important;
+  }
+
+  .caro-item {
+    height: 20rem !important;
+  }
+
+  .caro-in {
+    height: 50vh !important;
+  }
+
+  .additionalImg {
+    display: none;
+  }
+
+  .carousel-container {
+    background-size: cover !important;
+    background: url("../images/banner.png") no-repeat center;
+  }
+}
+
+/* ... (previous CSS rules) ... */
+
+@media (max-width: 768px) {
+  
+
+.carousel-indicators{
+  position: relative !important;
+  top: 1.5rem !important;
+}
+}
+
